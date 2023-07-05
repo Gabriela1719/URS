@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Gradient -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.5"
+            android:src="@drawable/background"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+
+    <!-- Title Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_above="@+id/loginLayout"
+        android:layout_marginBottom="60dp">
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:fontFamily="sans-serif-smallcaps"-->
+        <!--            android:text="Attendance Management System"-->
+        <!--            android:textAlignment="center"-->
+        <!--            android:textColor="@color/title_text_color"-->
+        <!--            android:textSize="20sp"-->
+        <!--            tools:ignore="HardcodedText"-->
+        <!--            tools:targetApi="jelly_bean" />-->
+
+
+    </LinearLayout>
+
+    <!-- Login Layout -->
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="364dp"
+        android:layout_height="359dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/background"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="94dp"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/people"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textAlignment="center"
+            android:textColor="@color/lightgray"
+            android:textSize="50sp"
+            tools:ignore="HardcodedText"
+            tools:targetApi="jelly_bean"
+            android:drawableLeft="@drawable/people" />
+
+        <TextView
+            android:layout_width="244dp"
+            android:layout_height="214dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Attendance Management System"
+            android:textAlignment="center"
+            android:textColor="@color/lightgray"
+            android:textSize="40sp"
+            tools:ignore="HardcodedText"
+            tools:targetApi="jelly_bean" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
